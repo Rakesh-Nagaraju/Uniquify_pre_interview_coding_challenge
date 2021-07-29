@@ -1,6 +1,6 @@
 # Uniquify_pre_interview_coding_challenge
 
-##Coding Challenge:
+## Coding Challenge:
 
 Using Python, construct a class without importing any modules given the following guidelines:
 - Given 2 inputs, data and shape, construct a tensor using nested lists.
@@ -12,7 +12,7 @@ Using Python, construct a class without importing any modules given the followin
 - Output an empty list if the shape given is also an empty list ([])
 
 
-###Examples:
+### Example 1:
 ```
 class Tensor():
   ...
@@ -28,18 +28,18 @@ class Tensor():
   ...
 
 
->>> data0 = [0, 1, 2, 3, 4, 5, 0.1, 0.2, -3]
+>>>] data0 = [0, 1, 2, 3, 4, 5, 0.1, 0.2, -3]
 >>> shape0 = [2, 3, 2]
 >>> tensor0 = Tensor(data0, shape0)
 ```
-###output:
+### Output:
 > [[[0, 1], [2, 3], [4, 5]], [[0.1, 0.2], [-3, 0], [0, 0]]]
 
 
+### Example 2:
+> data1 = [0, 1, 2, 3, 4, 5, 0.1, 0.2, -3, -2, -1, 3, 2, 1]
+> shape1 = [5, 2]
+> tensor1 = Tensor(data1, shape1)
 
->>> data1 = [0, 1, 2, 3, 4, 5, 0.1, 0.2, -3, -2, -1, 3, 2, 1]
->>> shape1 = [5, 2]
->>> tensor1 = Tensor(data1, shape1)
-
-output:
+### Output:
 [[0, 1], [2, 3], [4, 5], [0.1, 0.2], [-3, -2]]
